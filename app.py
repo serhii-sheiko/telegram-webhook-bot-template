@@ -36,7 +36,7 @@ else:
     )
 
 db = client[DB_NAME]
-assistant_collection = db[DB_COLLECTION]
+db_collection = db[DB_COLLECTION]
 
 # Configure logging to stdout
 logging.basicConfig(
