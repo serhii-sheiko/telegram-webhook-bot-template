@@ -19,7 +19,7 @@ This project provides a robust template for creating a Telegram bot with webhook
 ### Getting Started
 
 1. **Prerequisites**:
-   - Python 3.x
+   - Python 3.12+ (3.13 recommended)
    - Flask
    - PyTelegramBotAPI
    - PyMongo
