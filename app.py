@@ -26,11 +26,6 @@ app = Flask(__name__)
 if ENV_NAME == ENV_PRODUCTION:
     client = MongoClient(MONGO_URI, server_api=ServerApi("1"))
 else:
-    from ssl import CERT_NONE, SSLContext
-
-    ssl_context = SSLContext()
-    ssl_context.verify_mode = CERT_NONE
-
     client = MongoClient(
         MONGO_URI, server_api=ServerApi("1"), tls=True, tlsAllowInvalidCertificates=True
     )
